@@ -17,4 +17,21 @@ Raytracer implemented in C.
 
 ### Run
 
-- `./raytracer`
+- `<build_folder>/src/raytracer` executes the raytracer entry point.
+
+### Test
+
+- `<build_folder>/tests/raytracer_test` executes the unit tests.
+
+## Project Layout
+
+- `CMakeLists.txt`
+  - Sets up the project and adds the `vendor`, `lib`, `src`, and `tests` subdirectories.
+- `lib/`
+  - Modules shared across the raytracer, built as static libraries.
+- `src/`
+  - Raytracer entry point, built as an executable.
+- `tests/`
+  - Unit tests built using the [Unity](https://github.com/ThrowTheSwitch/Unity) framework.
+- `vendor/`
+  - Third-party code like Unity added as Git submodules, built as static libraries.
