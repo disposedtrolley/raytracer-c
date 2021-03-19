@@ -1,8 +1,20 @@
 cmake_minimum_required(VERSION 3.17)
 
-project(raytracer C)
+project("raytracer-c" C)
 
-set(SOURCES
-        src/main.c)
+add_library(lib
+        STATIC
+        lib/core/tuples.c
+        )
 
-add_executable(raytracer ${SOURCES})
+target_include_directories(lib PUBLIC
+        lib
+        )
+
+add_executable(raytracer
+        src/main.c
+        )
+
+target_link_libraries(raytracer
+        lib
+        )
