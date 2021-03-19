@@ -3,5 +3,4 @@
 
 int main() {
     printf("Hello Raytracer\n");
-    printf("%d\n", my_tuple_func());
 }
