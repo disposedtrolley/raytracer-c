@@ -4,7 +4,7 @@ project("raytracer-c" C)
 
 add_subdirectory(vendor)
 add_subdirectory(lib)
-add_subdirectory(src)
+add_subdirectory(exec)
 
 include(CTest)
 add_subdirectory(tests)

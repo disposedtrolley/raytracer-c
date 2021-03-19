@@ -17,7 +17,7 @@ Raytracer implemented in C.
 
 ### Run
 
-- `<build_folder>/src/raytracer` executes the raytracer entry point.
+- `<build_folder>/exec/raytracer` executes the raytracer entry point.
 
 ### Test
 
@@ -26,10 +26,10 @@ Raytracer implemented in C.
 ## Project Layout
 
 - `CMakeLists.txt`
-  - Sets up the project and adds the `vendor`, `lib`, `src`, and `tests` subdirectories.
+  - Sets up the project and adds the `vendor`, `lib`, `exec`, and `tests` subdirectories.
 - `lib/`
   - Modules shared across the raytracer, built as static libraries.
-- `src/`
+- `exec/`
   - Raytracer entry point, built as an executable.
 - `tests/`
   - Unit tests built using the [Unity](https://github.com/ThrowTheSwitch/Unity) framework.
